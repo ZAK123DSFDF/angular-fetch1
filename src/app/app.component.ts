@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   }
   userResource = resource({
     loader: async () => {
-      const response = await fetch('https://icanhazdadjoke.com/', {
+      const response = await fetch('https://icanhazdadjok.com/', {
         headers: {
           Accept: 'application/json',
         },
