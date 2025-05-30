@@ -1,6 +1,4 @@
-@if (userResource.isLoading()) {
-<h1>loading...</h1>
-}@else if (userResource.error()) {
-<h1>something went wrong</h1>
+@if(userResource.isLoading()) {
+  <p>Loading user data...</p>
 }
-<h1>{{ user() }}</h1>
+<h1>{{ userResource.value() }}</h1>
